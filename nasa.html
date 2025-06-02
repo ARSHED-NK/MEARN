@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nasa</title>
+    <style>
+        *{
+            padding: 0%;
+            margin: 0%;
+        }
+        .body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+            
+            color: white;
+        }
+        .navbar{
+            background-color: black;
+            width: 100%;
+            height: 10vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-left{
+          color: rgb(255, 255, 255);
+          padding: 15px;
+        }
+        .nav-right{
+            color: white;
+            display: flex;
+            gap: 20px;
+            padding-right: 10px;
+        }
+        .live{
+          border: 1px solid red;
+          color: rgb(255, 255, 255);
+          background-color: black;
+        }
+        .live:hover{
+          background-color: red;
+          border-radius: 4px;
+        }
+        .select{
+            background-color: rgb(0, 0, 0);
+            border-radius: 50%;
+            border-color: cornsilk;
+            color: cornsilk;
+        }
+        
+        input{
+            background-color: black;
+            border-color: rgb(112, 112, 112);
+            color: cornsilk;                      
+        }
+        .photo{
+            width:10%;
+            height: 10vh;
+            display: flex;
+        }
+        .div2{
+            padding: 150px 50px 50px;
+            box-sizing: border-box;
+            background-image: url(./abcd.jpg);
+            background-size: contain; 
+            width: 100%;
+            height: 90vh;
+        }
+        .div2 h1{
+            color: white;
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+        .div2 p{
+            color: white;
+            max-width: 500px;
+            margin-bottom: 20px;
+        }
+        .div2 button{
+            background-color: #f04;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 10px;
+            font-weight: bold;
+            cursor: pointer;
+            
+        }
+         h3{
+            display: inline-block;
+            justify-content: space-around;
+            align-items: center;
+            padding: 50px;
+            padding-top:180px;
+            color:white;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: medium;
+         }  
+        button:hover{
+            background-color: red;
+            padding: 12px 22px;
+        }
+        .footer h3{
+            display: inline-block;
+            justify-content: space-around;  
+            align-items: center;         
+            padding: 50px;
+            padding-top: 2px;
+            color:white;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: medium;          
+        }
+    .footer-items {
+      display: flex;
+      gap: 100px;
+      margin-top: 150px;
+    }
+    .line{
+      color: white;
+      padding: 0 0 10px 0;
+    }
+    .item {
+      text-transform: uppercase;
+      font-size: 10px;
+      color: white;
+    }
+    .item-title {
+      font-size: 14px;
+      font-weight: bold;
+      margin-top: 5px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      color: white;
+    }
+    .right-icons {
+      display: flex;
+      justify-content: flex-end;
+      align-items:end;
+      gap: 10px;
+      padding-left: 425px;
+      
+    }
+    .profile {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      overflow: hidden;
+    
+    }
+     .profile img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .pause-btn {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background:gray;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      color: white;
+      
+    }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+    <div class="nav-left">Explore
+        <select class="select">
+            <option value="option 1"></option>
+            <option value="option 2"></option>
+            <option value="option 3"></option>
+        </select>
+          <input type="search" placeholder="search">
+    </div>
+  
+    <div class="photo">
+        <img src="./nasalogo.jpg" alt="">
+    </div>
+    <div class="nav-right">
+      <div>News&Events</div>
+      <div>Multimedia</div>
+      <div>Nasa+
+      <live class="live">live</live>
+    </div>
+    </div>
+  </div>
+  <div class="div2">
+    <h1>FOR  THE BENEFITS OFF <br> ALL</h1>
+    <p>NASA investigates the unknown in air and space, innovates for the benifit of humanity,and inspires the world through discovery</p>
+    <button>NASA Mission</button>
+  <div class="footer-strip">
+    <div class="footer-items">
+      <div>
+        <div class="line">__________________________</div>
+        <div class="item">Crewed Lunar Flyby</div>
+        <div class="item-title">Artemis II <span>🚀</span></div>
+      </div>
+      <div>
+        <div class="line">__________________________</div>
+        <div class="item">Planetary Defense</div>
+        <div class="item-title">NEO Surveyor <span>🔴</span></div>
+      </div>
+      <div>
+        <div class="line">__________________________</div>
+        <div class="item">Cosmic Wonders</div>
+        <div class="item-title">Nancy Grace Roman Space Telescope <span>🔴</span></div>
+      </div>
+       <div class="right-icons">
+      <div class="profile">
+        <img src="./profile.jpg" alt="Profile">
+      </div>
+      <div class="pause-btn">⏸</div>
+    </div>
+    </div>
+  </div>
+  </div>
+</body>
+</html>
